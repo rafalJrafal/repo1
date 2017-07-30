@@ -7,9 +7,15 @@
 //============================================================================
 
 #include <iostream>
+
+#include "../include/R_Thread.h"
+#include "../include/R_Log.h"
+
 using namespace std;
 
 int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+
+	LOG("hello")
 	return 0;
 }
