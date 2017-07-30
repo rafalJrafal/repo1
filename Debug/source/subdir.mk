@@ -4,12 +4,18 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../source/R_Conditional.cpp \
+../source/R_Mutex.cpp \
 ../source/R_Thread.cpp 
 
 OBJS += \
+./source/R_Conditional.o \
+./source/R_Mutex.o \
 ./source/R_Thread.o 
 
 CPP_DEPS += \
+./source/R_Conditional.d \
+./source/R_Mutex.d \
 ./source/R_Thread.d 
 
 

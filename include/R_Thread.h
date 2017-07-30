@@ -15,8 +15,8 @@
 class R_Thread{
 public:
 	R_Thread();
-	bool AttachFunction(void * (* run) (void *));
-
+	bool AttachFunction(void * (* run) (void *), void * param = 0);
+	void JoinThread();
 private:
 	pthread_t p;
 };

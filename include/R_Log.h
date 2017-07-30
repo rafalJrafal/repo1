@@ -11,10 +11,10 @@
 #include <iostream>
 #include <stdio.h>
 
-#define LOG(string) \
+#define LOG( ... ) \
 	char str[100]; \
-	sprintf(str, string); \
-	std::cout << str;
+	sprintf(str, __VA_ARGS__); \
+	std::cout << str << std::endl << std::flush;
 
 
 
